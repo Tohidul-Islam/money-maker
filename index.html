@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <main class="my-8">
+        <h1 class="text-5xl text-amber-500 text-center font-extrabold">Money Master</h1>
+
+        <section id="money-section" class="py-9">
+            <div class="grid grid-cols-2">
+                <div>
+                    <img src="financial.jpg" alt="">
+                </div>
+                <div class="p-8 bg-amber-100 text-center ">
+                    <div class="income-col">
+                        <h2 class="text-4xl font-bold py-5">Income</h2>
+                        <div>
+                            <h3 class="inline-flex text-2xl">Income:</h3>
+                            <input id="total-income" class="inline-flex p-2 rounded" type="text" value="00">
+                        </div>
+                    </div>
+
+                    <div class="expense-col">
+                        <h2 class="text-4xl font-bold py-5">Expenses</h2>
+                        <div class="py-3">
+                            <h3 class="inline-flex text-2xl">Foods:</h3>
+                            <input id="foods" class="inline-flex p-2 rounded" type="text" value="00">
+                        </div>
+                        <div class="py-3">
+                            <h3 class="inline-flex text-2xl">Rents:</h3>
+                            <input id="rents" class="inline-flex p-2 rounded" type="text" value="00">
+                        </div>
+                        <div class="py-3">
+                            <h3 class="inline-flex text-2xl">Clothes:</h3>
+                            <input id="clothes" class="inline-flex p-2 rounded" type="text" value="00">
+                        </div>
+                    </div>
+                    <div class="calculate">
+                        <button id="calculate-btn"
+                            class="py-3 px-9 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-800 my-5">Calculate</button>
+                    </div>
+                    <div class="totalExpAndBlnc">
+                        <h2 class="text-3xl my-3">Total Expenses: <span id="total-expense">00</span></h2>
+                        <h2 class="text-3xl my-3">Balance: <span id="total-balance">00</span></h2>
+                    </div>
+                    <div class="save-amount">
+                        <h3 class="inline-flex text-2xl">Save:</h3>
+                        <input id="total-save" class="inline-flex p-2 rounded" type="text" value="0"> %
+                        <button id="save-btn"
+                            class="inline-flex py-3 px-9 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-800 my-5">Save
+                        </button>
+                        <h2 class="text-3xl my-3">Saving Amount: <span id="saving-amount">00</span></h2>
+                        <h2 class="text-3xl my-3">Remaining Balance: <span id="remaining-balance">00</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
